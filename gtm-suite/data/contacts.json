@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Local Test",
+    "company": "Test Co",
+    "email": "",
+    "phone": "",
+    "status": "to-contact",
+    "id": "e5a3n5esrsr",
+    "lastContact": "11/20/2025"
+  },
+  {
+    "name": "max",
+    "company": "av",
+    "email": "max@candlefish.ai",
+    "phone": "6179994467",
+    "status": "follow-up",
+    "id": "h0gigmevnbg",
+    "lastContact": "11/20/2025"
+  },
+  {
+    "name": "tyler",
+    "company": "Advantage Capital",
+    "email": "tyler@ac.com",
+    "phone": "7777777777",
+    "status": "to-contact",
+    "id": "e1ujwvatcik",
+    "lastContact": "11/20/2025"
+  },
+  {
+    "name": "Note Tester",
+    "company": "",
+    "email": "",
+    "phone": "",
+    "notes": "FindMeByThisNote",
+    "status": "to-contact",
+    "id": "as4vdlrqhg",
+    "lastContact": "11/20/2025"
+  }
+]

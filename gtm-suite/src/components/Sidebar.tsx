@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { LayoutDashboard, Users, Building2, HelpCircle, FileText, BarChart3, Calendar, MessageSquare } from 'lucide-react';
+import { LayoutDashboard, Users, Building2, HelpCircle, FileText, MessageSquare } from 'lucide-react';
 
 const navItems = [
     { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },

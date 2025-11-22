@@ -1,0 +1,142 @@
+[
+  {
+    "id": "suite-1",
+    "name": "TechStart GTM",
+    "owner": "Alice Tech",
+    "vertical": "SaaS",
+    "description": "GTM strategy for new SaaS product",
+    "status": "active",
+    "credentials": {
+      "username": "alice",
+      "password": "123"
+    },
+    "stats": {
+      "contacts": 127,
+      "reachedOut": 84,
+      "activeLeads": 23,
+      "conversionRate": "18%"
+    }
+  },
+  {
+    "id": "suite-2",
+    "name": "GreenEnergy Launch",
+    "owner": "Bob Green",
+    "vertical": "Clean Tech",
+    "description": "Launch plan for solar initiative",
+    "status": "active",
+    "credentials": {
+      "username": "bob",
+      "password": "123"
+    },
+    "stats": {
+      "contacts": 45,
+      "reachedOut": 12,
+      "activeLeads": 5,
+      "conversionRate": "8%"
+    }
+  },
+  {
+    "name": "EtchExpress",
+    "owner": "Marshall",
+    "vertical": "Other",
+    "description": "Trophy Engraving",
+    "id": "suite-1763778530543",
+    "status": "pending",
+    "stats": {
+      "contacts": 0,
+      "reachedOut": 0,
+      "activeLeads": 0,
+      "conversionRate": "0%"
+    }
+  },
+  {
+    "name": "Alice's Bakery",
+    "owner": "Food Tech",
+    "vertical": "HealthTech",
+    "description": "Bakery",
+    "credentials": {
+      "username": "Alice",
+      "password": "123"
+    },
+    "id": "suite-1763779547139",
+    "status": "pending",
+    "stats": {
+      "contacts": 0,
+      "reachedOut": 0,
+      "activeLeads": 0,
+      "conversionRate": "0%"
+    }
+  },
+  {
+    "name": "Bob greenery",
+    "owner": "Bob",
+    "vertical": "CleanTech",
+    "description": "cleantech",
+    "credentials": {
+      "username": "Bob",
+      "password": "123"
+    },
+    "id": "suite-1763779621631",
+    "status": "pending",
+    "stats": {
+      "contacts": 0,
+      "reachedOut": 0,
+      "activeLeads": 0,
+      "conversionRate": "0%"
+    }
+  },
+  {
+    "name": "Advantage capital",
+    "owner": "Tyler",
+    "vertical": "FinTech",
+    "description": "Sourcing software",
+    "credentials": {
+      "username": "tyler",
+      "password": "slammers"
+    },
+    "id": "suite-1763780005505",
+    "status": "pending",
+    "stats": {
+      "contacts": 0,
+      "reachedOut": 0,
+      "activeLeads": 0,
+      "conversionRate": "0%"
+    }
+  },
+  {
+    "name": "VanWest",
+    "owner": "James",
+    "vertical": "FinTech",
+    "description": "Software dev",
+    "credentials": {
+      "username": "James",
+      "password": "cookie"
+    },
+    "id": "suite-1763780303892",
+    "status": "pending",
+    "stats": {
+      "contacts": 0,
+      "reachedOut": 0,
+      "activeLeads": 0,
+      "conversionRate": "0%"
+    }
+  },
+  {
+    "name": "PromoterOS",
+    "owner": "Jesse",
+    "vertical": "SaaS",
+    "description": "Pricing analytics",
+    "credentials": {
+      "username": "Jesse",
+      "password": "music"
+    },
+    "id": "suite-1763780459852",
+    "status": "pending",
+    "stats": {
+      "contacts": 0,
+      "reachedOut": 0,
+      "activeLeads": 0,
+      "conversionRate": "0%"
+    }
+  }
+]

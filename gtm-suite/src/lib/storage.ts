@@ -30,7 +30,7 @@ async function readContacts(): Promise<Contact[]> {
     try {
         const data = await fs.readFile(DATA_FILE, 'utf-8');
         return JSON.parse(data);
-    } catch (error) {
+    } catch {
         // If file doesn't exist or is invalid, return empty array
         return [];
     }

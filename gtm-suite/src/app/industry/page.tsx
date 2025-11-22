@@ -140,7 +140,7 @@ export default function IndustryPage() {
                 <h3 className="text-lg font-semibold text-foreground mb-2">🎯 Competitive Positioning</h3>
                 <p className="text-muted-foreground">
                     Focus on your unique value proposition when competing against established players. Emphasize personalized service,
-                    flexibility, and innovative solutions that larger competitors can't match.
+                    flexibility, and innovative solutions that larger competitors can&apos;t match.
                 </p>
             </div>
         </div>

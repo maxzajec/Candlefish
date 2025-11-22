@@ -1,25 +1,44 @@
+import { getSuiteById } from '@/lib/suite-storage';
 import { TrendingUp, Users, Target, CheckCircle2 } from 'lucide-react';
 
-const stats = [
-    { label: 'Total Contacts', value: '127', change: '+12%', icon: Users, color: 'text-blue-400' },
-    { label: 'Reached Out', value: '84', change: '+8%', icon: CheckCircle2, color: 'text-green-400' },
-    { label: 'Active Leads', value: '23', change: '+5%', icon: Target, color: 'text-purple-400' },
-    { label: 'Conversion Rate', value: '18%', change: '+3%', icon: TrendingUp, color: 'text-orange-400' },
-];
+type Props = {
+    searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}
 
-const recentActivity = [
-    { action: 'Added contact', name: 'John Smith - ABC Corp', time: '2 hours ago' },
-    { action: 'Reached out to', name: 'Sarah Johnson - XYZ Inc', time: '5 hours ago' },
-    { action: 'Updated status', name: 'Mike Davis - Tech Solutions', time: '1 day ago' },
-    { action: 'Added note to', name: 'Emily Chen - Global Enterprises', time: '2 days ago' },
-];
+export default async function DashboardPage(props: Props) {
+    const searchParams = await props.searchParams;
+    const suiteId = typeof searchParams.suiteId === 'string' ? searchParams.suiteId : undefined;
+    const suite = suiteId ? await getSuiteById(suiteId) : undefined;
 
-export default function DashboardPage() {
+    // Default stats if no suite is selected or found (fallback to generic view)
+    const stats = suite ? [
+        { label: 'Total Contacts', value: suite.stats.contacts.toString(), change: '+12%', icon: Users, color: 'text-blue-400' },
+        { label: 'Reached Out', value: suite.stats.reachedOut.toString(), change: '+8%', icon: CheckCircle2, color: 'text-green-400' },
+        { label: 'Active Leads', value: suite.stats.activeLeads.toString(), change: '+5%', icon: Target, color: 'text-purple-400' },
+        { label: 'Conversion Rate', value: suite.stats.conversionRate, change: '+3%', icon: TrendingUp, color: 'text-orange-400' },
+    ] : [
+        { label: 'Total Contacts', value: '127', change: '+12%', icon: Users, color: 'text-blue-400' },
+        { label: 'Reached Out', value: '84', change: '+8%', icon: CheckCircle2, color: 'text-green-400' },
+        { label: 'Active Leads', value: '23', change: '+5%', icon: Target, color: 'text-purple-400' },
+        { label: 'Conversion Rate', value: '18%', change: '+3%', icon: TrendingUp, color: 'text-orange-400' },
+    ];
+
+    const recentActivity = [
+        { action: 'Added contact', name: 'John Smith - ABC Corp', time: '2 hours ago' },
+        { action: 'Reached out to', name: 'Sarah Johnson - XYZ Inc', time: '5 hours ago' },
+        { action: 'Updated status', name: 'Mike Davis - Tech Solutions', time: '1 day ago' },
+        { action: 'Added note to', name: 'Emily Chen - Global Enterprises', time: '2 days ago' },
+    ];
+
     return (
         <div className="space-y-6">
             <div>
-                <h1 className="text-3xl font-bold text-foreground">Dashboard</h1>
-                <p className="text-muted-foreground mt-1">Welcome back! Here's your GTM overview.</p>
+                <h1 className="text-3xl font-bold text-foreground">
+                    {suite ? `${suite.name} Dashboard` : 'Dashboard'}
+                </h1>
+                <p className="text-muted-foreground mt-1">
+                    {suite ? `Welcome back, ${suite.owner}! Here's your GTM overview.` : "Welcome back! Here's your GTM overview."}
+                </p>
             </div>
 
             {/* Stats Grid */}

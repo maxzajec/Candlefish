@@ -113,9 +113,9 @@ export default function FAQPage() {
             ))}
 
             <div className="bg-secondary/50 backdrop-blur-sm border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-2">Can't find your answer?</h3>
+                <h3 className="text-lg font-semibold text-foreground mb-2">Can&apos;t find your answer?</h3>
                 <p className="text-muted-foreground mb-4">
-                    If you encounter a question not covered here, reach out to our support team. We'll help you craft
+                    If you encounter a question not covered here, reach out to our support team. We&apos;ll help you craft
                     the perfect response and potentially add it to this list.
                 </p>
                 <button className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium py-2 px-4 rounded-lg transition-colors">
